@@ -1,0 +1,264 @@
+.contact_how{
+    .text_btns{
+        li{
+            float: left;
+
+            a{
+                float: left;
+                width: 140px;
+                color: $lightblue;
+                font-size: 16px;
+                padding: 22px 14px 14px 0;
+            }
+            .dark{
+                color: $baseColor;
+            }
+        }
+    }
+
+    .styled_btns{
+        li{
+            float: left;
+        }
+
+    }
+
+    .dark_btn{
+        background: $baseColor;
+        border-radius: 5px;
+        padding: 15px 30px;
+        float: left;
+        margin: 8px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .light_btn{
+        background: $lightblue;
+        border-radius: 5px;
+        padding: 15px 30px;
+        float: left;
+        margin: 8px;
+        color: #fff;
+        text-transform: uppercase;
+        border: none;
+    }
+
+    .dark_btn, .light_btn{
+        &:hover{
+            text-decoration: none;
+            opacity: 0.8;
+        }
+    }
+
+    .form_container{
+        background: #f4f4f4;
+        width: $fullwidth;
+
+        @media(min-width: 990px){
+            background: url(../img/contact_img.jpg) top right no-repeat #f4f4f4;
+            background-size: contain;
+        }
+
+        .inner_container{
+
+            @media(min-width: 990px){
+                max-width: 400px;
+                padding: 0 0 30px;
+            }
+
+            @media(min-width: 1140px){
+                max-width: 600px;
+                padding: 0 0 65px;
+            }
+
+            @media(min-width: 1400px){
+                max-width: 940px;
+            }
+
+            h2{
+                color: $baseColor;
+                letter-spacing: 1px;
+                font-size: 22px;
+                padding: 50px 0 0 0;
+            }
+
+            p{
+                font-size: 18px;
+                line-height: 22px;
+                margin: 20px 0 0 0;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .contact_form{
+                max-width: 710px;
+                padding: 35px 0 0 0;
+
+                input, select{
+                    width: $fullwidth;
+                    border: 1px solid #d1d1d2;
+                    background: $white;
+                    margin: 0 0 5px;
+                    border-radius: 0px;
+                    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                        color: #524b47;
+                        font-weight: normal;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                    }
+                }
+            
+                #submit_btn{
+                    width: ($fullwidth - 50%);
+                    margin: 20px 0 0;
+                    text-transform: none;
+                    letter-spacing: 1px;
+
+                    @media(min-width: 1140px){
+                        width: ($fullwidth - 50%);
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+.where_map{
+    display: block;
+
+    .where_container{
+        background: url(../img/find_us.png) left bottom no-repeat $baseColor;
+        background-size: contain;
+        height: 100%;
+        min-height: 480px;
+        position: relative;
+
+        .where_copy{
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: ($fullwidth - 10%);
+
+            @media(min-width: 1440px){
+                left: 32%;
+                width: ($fullwidth - 40%);
+            }
+
+            h2{
+                color: $lightblue;
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+
+            p{
+                color: $white;
+                font-size: 10px;
+                line-height: 18px;
+                width: ($fullwidth - 10%);
+                max-width: 410px;
+                margin: 20px 0 0 0;
+            }
+
+            .box{
+                background: $lightblue;
+                width: ($fullwidth - 15%);
+                height: 150px;
+                margin: 40px 0 0 0;
+            }
+        }
+
+    }
+
+    .map_container{
+        padding: 0;
+
+        max-height: 480px;
+        overflow: hidden;
+        .google-maps {
+            position: relative;
+            padding: 0 0 50%;
+            height: 0;
+            overflow: hidden;
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
+    }
+}
+
+
+.signup{
+    padding: 0;
+    margin: 0 auto;
+    .container-fluid{
+        padding: 0;
+        .content_container{
+            width: ($fullwidth - 5%);
+        }
+    }
+    .signup_incentive{
+        display: block;
+        background: $white;
+        width: $fullwidth;
+        overflow: hidden;
+        padding: 20px;
+
+        p{
+            padding: 10px 0 0 0px;
+            font-size: 23px;
+            text-align: right;
+        }
+
+        .incentive_form{
+            text-align: center;
+            padding: 20px 0 0 0;
+
+            @media(min-width: 990px){
+                text-align: left;
+                padding: 0;
+            }
+
+            input{
+                background: #f9f9fa;
+                border: 1px solid #cccccc;
+                padding: 10px 0 10px 10px;
+                height: 40px;
+                width: $fullwidth;
+                max-width: 450px;
+
+                &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                    color: #524b47;
+                    font-weight: normal;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                }
+
+                &:focus{
+                    outline: none;
+                }
+            }
+            button{
+                cursor: pointer;
+                border: none;
+                background: none;
+
+                &:hover{
+                    background: $lightgrey;
+                }
+            }
+        }
+    }
+
+
+    p{
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 10px 0;
+    }
+}
